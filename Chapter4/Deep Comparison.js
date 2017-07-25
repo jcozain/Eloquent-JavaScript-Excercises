@@ -11,7 +11,7 @@
 // into account: by a historical accident, typeof null also produces "object".
 
 
-//CODE AUTHOR == UBOAT46
+//CODE AUTHOR = UBOAT46
 
 function deepEqual(a,b){
     if(a === b){

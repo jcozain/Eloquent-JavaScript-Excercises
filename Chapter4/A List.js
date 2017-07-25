@@ -8,7 +8,7 @@
 // If you haven’t already, also write a recursive version of nth.
 
 
-//CODE AUTHOR == UBOAT46
+//CODE AUTHOR = UBOAT46
 
 
 function arrayToList(arr){

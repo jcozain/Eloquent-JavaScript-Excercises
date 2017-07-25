@@ -5,7 +5,7 @@
 // in the inverse order. The second, reverseArrayInPlace, does what the reverse method does: it modifies the 
 // array given as argument in order to reverse its elements. Neither may use the standard reverse method.
 
-//CODE AUTHOR == UBOAT46
+//CODE AUTHOR = UBOAT46
 
 
 function reverseArray(arr){
