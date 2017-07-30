@@ -18,3 +18,17 @@ Repository for code excercises found throughout the book
  9. [Regular Expressions](https://github.com/uboat46/Eloquent-JavaScript-Excercises/tree/master/Chapter9)
  10. [Modules](https://github.com/uboat46/Eloquent-JavaScript-Excercises/tree/master/Chapter10)
  11. [Project: A Programming Language](https://github.com/uboat46/Eloquent-JavaScript-Excercises/tree/master/Chapter11)
+
+
+ ## Credit
+
+ All credit for the mind behind the creation of the excercises should be given 
+ to [Marijn Haverbeke](https://marijnhaverbeke.nl/), the only thing i have done
+ is doing the excercises by myself and with a little help of the [code sandbox](http://eloquentjavascript.net/code/).
+
+ I aprecciate the author of this book for the great knowledge he has passed on to us and
+ recommend reading this book to anyone eager and curious of what programming in javascript
+ really looks like.
+
+ ---Emiliano Sotomayor (uboat46)--- 
+
