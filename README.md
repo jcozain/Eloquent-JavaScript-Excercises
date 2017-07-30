@@ -1,11 +1,12 @@
 # Eloquent-JavaScript-Excercises
 
 Repository for code excercises found throughout the book
+* [Eloquent JavaScript Second Edition](http://eloquentjavascript.net/index.html)
+--Written by [Marijn Haverbeke](https://marijnhaverbeke.nl/).
 
 ![Eloquent JavaScript Second Edition cover](cover.png)
 
-[Eloquent JavaScript Second Edition](http://eloquentjavascript.net/index.html)
---Written by [Marijn Haverbeke](https://marijnhaverbeke.nl/).
+
 
 ## Chapters
 
