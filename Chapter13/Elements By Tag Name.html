@@ -1,0 +1,42 @@
+<!--The getElementsByTagName method returns all child elements with a given tag name. 
+Implement your own version of it as a regular nonmethod function that takes a node and 
+a string (the tag name) as arguments and returns an array containing all descendant element 
+nodes with the given tag name.
+
+To find the tag name of an element, use its tagName property. But note that this will return 
+the tag name in all uppercase. Use the toLowerCase or toUpperCase string method to compensate for this.
+
+CODE AUTHOR = UBOAT46
+
+CODE SHOULD BE RUN IN THE BROWSER (SORRY FOR MY LACK OF INTERFACE I'LL TRY TO IMPLEMENT SOME SOONER)
+http://eloquentjavascript.net/code/#13.2 -->
+
+<h1>Heading with a <span>span</span> element.</h1>
+<p>A paragraph with <span>one</span>, <span>two</span>
+  spans.</p>
+
+<script>
+    function byTagName(node, tagName) {
+        var res = [];
+        function getChildrenByTag(node,tagName){
+            if(node.nodeType == document.ELEMENT_NODE){
+                for (var i = 0; i < node.childNodes.length; i++) {
+                    getChildrenByTag(node.childNodes[i],tagName);
+                }
+                if(node.tagName.toLowerCase() === tagName){
+                    res.unshift(node);
+                }
+            }
+        }
+        getChildrenByTag(node,tagName);
+        return res;
+    }
+
+  console.log(byTagName(document.body, "h1").length);
+  // → 1
+  console.log(byTagName(document.body, "span").length);
+  // → 3
+  var para = document.querySelector("p");
+  console.log(byTagName(para, "span").length);
+  // → 2
+</script>
