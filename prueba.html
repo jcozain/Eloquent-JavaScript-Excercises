@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        if (typeof(Worker) !== "undefined") {
+            w = new Worker('message.js');
+            w.onmessage = function(event){
+                document.write(event.data);
+            };
+        } else {
+            alert('no worker');
+        }
+    </script>
+</body>
+</html>
