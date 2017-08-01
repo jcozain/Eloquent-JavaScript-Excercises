@@ -23,7 +23,42 @@ http://eloquentjavascript.net/code/#14.3 -->
 </div>
 <script>
   function asTabs(node) {
-    // Your code here.
+    var wrapper =document.getElementById('wrapper');
+    var tabs = [];
+    var childs = [];
+    for(var i = 0; i < wrapper.childNodes.length - 1; i++){
+      if(wrapper.childNodes[i].nodeType == document.ELEMENT_NODE){
+        tabs.push(wrapper.childNodes[i].getAttribute("data-tabname"));
+        var child = wrapper.childNodes[i];
+        child.style.display = 'none';
+        childs.push(child);
+      }
+    }
+    tabList = document.createElement('div');
+    tabs.forEach(function(tab,i){
+      button = document.createElement('button');
+      button.innerText = tabs[i];
+      button.addEventListener('click',function(){changeTab(i)});
+      tabList.appendChild(button);
+    });
+    wrapper.insertBefore(tabList,wrapper.childNodes[0]);
+    function changeTab(index){
+      tabList.childNodes.forEach(function(node,i){
+        if(i == index){
+          node.style.backgroundColor = 'blue';
+        }else{
+          node.style.backgroundColor = '';
+        }
+      });
+      childs.forEach(function(node,i){
+        if(i == index){
+          node.style.display = 'block';
+        }else{
+          node.style.display = 'none';
+        }
+      });
+    }
+    changeTab(0);
   }
   asTabs(document.querySelector("#wrapper"));
 </script>
