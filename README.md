@@ -18,6 +18,7 @@ Repository for code excercises found throughout the book
  9. [Regular Expressions](https://github.com/uboat46/Eloquent-JavaScript-Excercises/tree/master/Chapter9)
  10. [Modules](https://github.com/uboat46/Eloquent-JavaScript-Excercises/tree/master/Chapter10)
  11. [Project: A Programming Language](https://github.com/uboat46/Eloquent-JavaScript-Excercises/tree/master/Chapter11)
+ 
  13. [The Document Object Model](https://github.com/uboat46/Eloquent-JavaScript-Excercises/tree/master/Chapter13)
  14. [Handling Events](https://github.com/uboat46/Eloquent-JavaScript-Excercises/tree/master/Chapter14)
  15. [Project: A Platform Game](https://github.com/uboat46/Eloquent-JavaScript-Excercises/tree/master/Chapter15)
